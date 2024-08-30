@@ -21,8 +21,8 @@ class Main:
         game.makeScreen()
         player=Player()
         monster=Enemy(player)
-        #monster.loadEasy()
-        monster.loadPatterns([[monster.stormPattern],[monster.stormPattern]])
+        monster.loadEasy()
+        #monster.loadPatterns([[monster.stormPattern],[monster.stormPattern]])
         while player.lives>0:
             monster.upkeep()
             player.move()
